@@ -1,0 +1,83 @@
+/* color logo #000000 */
+/* color text #212121 */
+/* color text #757575 */
+/* color text #2196F3 */
+/* color text #FFFFFF */
+/* button background-color #F5F4FA */
+/* button background-color #2196F3 */
+/* background-color footer #2F303A */
+
+:root {
+  --color-logo-web: rgba(33, 150, 243, 1);
+  --color-logo-hstudio: rgba(0, 0, 0, 1);
+  --color-logo-fstudio: rgba(255, 255, 255, 1);
+  --primery-text-color: rgba(33, 33, 33, 1);
+  --link-text-color: rgba(33, 33, 33, 1);
+  --text-color: rgba(117, 117, 117, 1);
+  --selection-header: rgba(33, 150, 243, 1);
+  --selection-button: rgba(255, 255, 255, 1);
+  --button-color: rgba(33, 33, 33, 1);
+  --button-bg-color: rgba(245, 244, 250, 1);
+  --button-color-hover: rgba(255, 255, 255, 1);
+  --button-bg-color-hover: rgba(33, 150, 243, 1);
+  --background-color-body: rgba(255, 255, 255, 1);
+  --background-color-footer: rgba(47, 48, 58, 1);
+}
+body {
+  color: var(--primery-text-color);
+  background-color: var(--background-color-body);
+  font-family: Roboto;
+}
+ul {
+  list-style: none;
+}
+/* стилизация link */
+.link-logo {
+}
+.link-logo-w {
+  color: var(--color-logo-web);
+}
+.link-logo-hs {
+  color: var(--color-logo-hstudio);
+}
+.link-logo-fs {
+  color: var(--color-logo-fstudio);
+}
+
+.link {
+  color: var(--link-text-color);
+}
+
+.link:hover,
+.link:focus,
+.link.current {
+  color: var(--selection-header);
+}
+
+.link-address {
+  color: var(--text-color);
+}
+.link-address:hover,
+.link-address:focus {
+  color: var(--selection-header);
+}
+/* стилизация button */
+.button {
+  color: var(--button-color);
+  background-color: var(--button-bg-color);
+}
+.button:hover,
+.button:focus {
+  color: var(--button-color-hover);
+  background-color: var(--button-bg-color-hover);
+}
+/* стилизация section text */
+.primery {
+}
+.direction {
+  color: var(--text-color);
+}
+/*стилизация footer */
+footer {
+  background-color: var(--background-color-footer);
+}

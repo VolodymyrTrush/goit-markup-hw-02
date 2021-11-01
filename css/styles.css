@@ -8,44 +8,71 @@
 /* background-color footer #2F303A */
 
 :root {
-  --color-logo-web: rgba(33, 150, 243, 1);
-  --color-logo-hstudio: rgba(0, 0, 0, 1);
-  --color-logo-fstudio: rgba(255, 255, 255, 1);
-  --primery-text-color: rgba(33, 33, 33, 1);
-  --link-text-color: rgba(33, 33, 33, 1);
-  --text-color: rgba(117, 117, 117, 1);
+  --logo-web: rgba(33, 150, 243, 1);
+  --logo-header-studio: rgba(0, 0, 0, 1);
+  --logo-footer-studio: rgba(255, 255, 255, 1);
+
+  --primery-text: rgba(33, 33, 33, 1);
+  --secondary-text: rgba(117, 117, 117, 1);
+
+  --link-text: rgba(117, 117, 117, 1);
+
   --selection-header: rgba(33, 150, 243, 1);
   --selection-button: rgba(255, 255, 255, 1);
-  --button-color: rgba(33, 33, 33, 1);
-  --button-bg-color: rgba(245, 244, 250, 1);
-  --button-color-hover: rgba(255, 255, 255, 1);
-  --button-bg-color-hover: rgba(33, 150, 243, 1);
-  --background-color-body: rgba(255, 255, 255, 1);
-  --background-color-footer: rgba(47, 48, 58, 1);
+
+  --button: rgba(33, 33, 33, 1);
+  --button-background: rgba(245, 244, 250, 1);
+  --button-selection: rgba(255, 255, 255, 1);
+  --button-background-selection: rgba(33, 150, 243, 1);
+
+  --background-body: rgba(255, 255, 255, 1);
+  --background-footer: rgba(47, 48, 58, 1);
+
+  --primery-link: rgba(255, 255, 255, 1);
+  --secondary-link: rgba(255, 255, 255, 0.6);
 }
 body {
-  color: var(--primery-text-color);
-  background-color: var(--background-color-body);
-  font-family: Roboto;
+  background-color: var(--background-body);
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 }
 ul {
   list-style: none;
 }
+a {
+  text-decoration: none;
+}
 /* стилизация link */
 .link-logo {
+  font-family: Raleway, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
 }
 .link-logo-w {
-  color: var(--color-logo-web);
+  color: var(--logo-web);
 }
 .link-logo-hs {
-  color: var(--color-logo-hstudio);
+  color: var(--logo-header-studio);
 }
 .link-logo-fs {
-  color: var(--color-logo-fstudio);
+  color: var(--logo-footer-studio);
 }
 
 .link {
-  color: var(--link-text-color);
+  color: var(--primery-text);
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.15;
+  letter-spacing: 0.02em;
 }
 
 .link:hover,
@@ -54,30 +81,75 @@ ul {
   color: var(--selection-header);
 }
 
-.link-address {
-  color: var(--text-color);
+.header-link-address {
+  color: var(--secondary-text);
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.15;
+  letter-spacing: 0.02em;
 }
-.link-address:hover,
-.link-address:focus {
+.header-link-address:hover,
+.header-link-address:focus {
   color: var(--selection-header);
 }
 /* стилизация button */
 .button {
-  color: var(--button-color);
-  background-color: var(--button-bg-color);
+  color: var(--button);
+  background-color: var(--button-background);
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  letter-spacing: 0.03em;
 }
 .button:hover,
 .button:focus {
-  color: var(--button-color-hover);
-  background-color: var(--button-bg-color-hover);
+  color: var(--button-selection);
+  background-color: var(--button-background-selection);
 }
 /* стилизация section text */
-.primery {
+.title {
+  color: var(--primery-text);
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
 }
 .direction {
-  color: var(--text-color);
+  color: var(--secondary-text);
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.03em;
 }
+
 /*стилизация footer */
+.footer-link-map,
+.footer-link-address {
+  color: var(--primery-link);
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+}
+.footer-link-address {
+  color: var(--secondary-link);
+}
+.footer-link-map:hover,
+.footer-link-map:focus,
+.footer-link-address:hover,
+.footer-link-address:focus {
+  color: var(--selection-header);
+}
 footer {
-  background-color: var(--background-color-footer);
+  background-color: var(--background-footer);
 }

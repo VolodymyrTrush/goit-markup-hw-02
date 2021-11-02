@@ -27,6 +27,7 @@
 
   --background-body: rgba(255, 255, 255, 1);
   --background-footer: rgba(47, 48, 58, 1);
+  --background-hero: rgba(47, 48, 58, 1);
 
   --primery-link: rgba(255, 255, 255, 1);
   --secondary-link: rgba(255, 255, 255, 0.6);
@@ -40,11 +41,33 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
+.hero {
+  background-color: var(--background-hero);
+}
+.hero-text {
+  color: var(--primery-link);
+
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.4;
+  letter-spacing: 0.09em;
+}
 ul {
   list-style: none;
 }
 a {
   text-decoration: none;
+}
+h2 {
+  color: var(--primery-text);
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
 }
 /* стилизация link */
 .link-logo {
@@ -95,6 +118,23 @@ a {
   color: var(--selection-header);
 }
 /* стилизация button */
+
+.hero-button {
+  color: var(--button);
+  background-color: var(--button-background);
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.03em;
+}
+.hero-button:hover,
+.hero.button:focus {
+  color: var(--button-selection);
+  background-color: var(--button-background-selection);
+}
+
 .button {
   color: var(--button);
   background-color: var(--button-background);
@@ -111,7 +151,36 @@ a {
   background-color: var(--button-background-selection);
 }
 /* стилизация section text */
+.features h3 {
+  color: var(--primery-text);
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.15;
+  letter-spacing: 0.03em;
+}
+
+.features p {
+  color: var(--secondary-text);
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+}
+
 .title {
+  color: var(--primery-text);
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+}
+.title-port {
   color: var(--primery-text);
   font-family: Roboto, sans-serif;
   font-style: normal;
@@ -120,7 +189,17 @@ a {
   line-height: 2;
   letter-spacing: 0.06em;
 }
+
 .direction {
+  color: var(--secondary-text);
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+}
+.direction-port {
   color: var(--secondary-text);
   font-family: Roboto, sans-serif;
   font-style: normal;

@@ -1,24 +1,16 @@
-/* color logo #000000 */
-/* color text #212121 */
-/* color text #757575 */
-/* color text #2196F3 */
-/* color text #FFFFFF */
-/* button background-color #F5F4FA */
-/* button background-color #2196F3 */
-/* background-color footer #2F303A */
-
 :root {
   --logo-web: rgba(33, 150, 243, 1);
   --logo-header-studio: rgba(0, 0, 0, 1);
   --logo-footer-studio: rgba(255, 255, 255, 1);
 
+  --primery-heder: rgba(33, 33, 33, 1);
+  --secondary-heder: rgba(117, 117, 117, 1);
+  --selection-header: rgba(33, 150, 243, 1);
+
   --primery-text: rgba(33, 33, 33, 1);
   --secondary-text: rgba(117, 117, 117, 1);
 
-  --link-text: rgba(117, 117, 117, 1);
-
-  --selection-header: rgba(33, 150, 243, 1);
-  --selection-button: rgba(255, 255, 255, 1);
+  --primery-hero: rgba(255, 255, 255, 1);
 
   --button: rgba(33, 33, 33, 1);
   --button-background: rgba(245, 244, 250, 1);
@@ -26,33 +18,17 @@
   --button-background-selection: rgba(33, 150, 243, 1);
 
   --background-body: rgba(255, 255, 255, 1);
-  --background-footer: rgba(47, 48, 58, 1);
   --background-hero: rgba(47, 48, 58, 1);
+  --background-team: rgba(245, 244, 250, 1);
+  --background-footer: rgba(47, 48, 58, 1);
 
-  --primery-link: rgba(255, 255, 255, 1);
+  --address-link: rgba(117, 117, 117, 1);
+  --map-link: rgba(255, 255, 255, 1);
   --secondary-link: rgba(255, 255, 255, 0.6);
+  --selection-footer: rgba(33, 150, 243, 1);
 }
 body {
   background-color: var(--background-body);
-  font-family: Roboto, sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-}
-.hero {
-  background-color: var(--background-hero);
-}
-.hero-text {
-  color: var(--primery-link);
-
-  font-family: Roboto, sans-serif;
-  font-style: normal;
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.4;
-  letter-spacing: 0.09em;
 }
 ul {
   list-style: none;
@@ -64,13 +40,13 @@ h2 {
   color: var(--primery-text);
   font-family: Roboto, sans-serif;
   font-style: normal;
-  font-weight: bold;
   font-size: 36px;
   line-height: 1.2;
   letter-spacing: 0.03em;
+  text-align: center;
 }
-/* стилизация link */
-.link-logo {
+/* стилизация logo */
+.logo {
   font-family: Raleway, sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -78,34 +54,32 @@ h2 {
   line-height: 1.2;
   letter-spacing: 0.03em;
 }
-.link-logo-w {
+.logo-web {
   color: var(--logo-web);
 }
-.link-logo-hs {
+.logo-studio-header {
   color: var(--logo-header-studio);
 }
-.link-logo-fs {
+.logo-studio-footer {
   color: var(--logo-footer-studio);
 }
-
+/*Стилизация links*/
 .link {
-  color: var(--primery-text);
-  font-family: Roboto, sans-serif;
+  color: var(--primery-heder);
   font-style: normal;
+  font-family: Roboto, sans-serif;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.15;
   letter-spacing: 0.02em;
 }
-
 .link:hover,
 .link:focus,
 .link.current {
   color: var(--selection-header);
 }
-
 .header-link-address {
-  color: var(--secondary-text);
+  color: var(--secondary-heder);
   font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -117,8 +91,23 @@ h2 {
 .header-link-address:focus {
   color: var(--selection-header);
 }
-/* стилизация button */
+/*Стилизация hero*/
+.hero {
+  background-color: var(--background-hero);
+  text-align: center;
+}
+.hero-text {
+  color: var(--primery-hero);
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.4;
+  letter-spacing: 0.09em;
 
+  text-transform: uppercase;
+}
+/* стилизация buttons */
 .hero-button {
   color: var(--button);
   background-color: var(--button-background);
@@ -128,13 +117,14 @@ h2 {
   font-size: 16px;
   line-height: 1.9;
   letter-spacing: 0.03em;
+  text-align: center;
 }
 .hero-button:hover,
 .hero.button:focus {
   color: var(--button-selection);
   background-color: var(--button-background-selection);
+  cursor: pointer;
 }
-
 .button {
   color: var(--button);
   background-color: var(--button-background);
@@ -149,8 +139,9 @@ h2 {
 .button:focus {
   color: var(--button-selection);
   background-color: var(--button-background-selection);
+  cursor: pointer;
 }
-/* стилизация section text */
+/* стилизация text features */
 .features h3 {
   color: var(--primery-text);
   font-family: Roboto, sans-serif;
@@ -160,7 +151,6 @@ h2 {
   line-height: 1.15;
   letter-spacing: 0.03em;
 }
-
 .features p {
   color: var(--secondary-text);
   font-family: Roboto, sans-serif;
@@ -170,7 +160,11 @@ h2 {
   line-height: 1.7;
   letter-spacing: 0.03em;
 }
-
+/*стилизация text images*/
+.team {
+  background-color: var(--background-team);
+  text-align: center;
+}
 .title {
   color: var(--primery-text);
   font-family: Roboto, sans-serif;
@@ -179,6 +173,7 @@ h2 {
   font-size: 16px;
   line-height: 1.2;
   letter-spacing: 0.03em;
+  text-align: center;
 }
 .title-port {
   color: var(--primery-text);
@@ -189,7 +184,6 @@ h2 {
   line-height: 2;
   letter-spacing: 0.06em;
 }
-
 .direction {
   color: var(--secondary-text);
   font-family: Roboto, sans-serif;
@@ -198,6 +192,7 @@ h2 {
   font-size: 16px;
   line-height: 1.2;
   letter-spacing: 0.03em;
+  text-align: center;
 }
 .direction-port {
   color: var(--secondary-text);
@@ -208,17 +203,17 @@ h2 {
   line-height: 1.9;
   letter-spacing: 0.03em;
 }
-
 /*стилизация footer */
 .footer-link-map,
 .footer-link-address {
-  color: var(--primery-link);
   font-family: Roboto, sans-serif;
   font-style: normal;
-  font-weight: normal;
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
+}
+.footer-link-map {
+  color: var(--map-link);
 }
 .footer-link-address {
   color: var(--secondary-link);
@@ -227,7 +222,7 @@ h2 {
 .footer-link-map:focus,
 .footer-link-address:hover,
 .footer-link-address:focus {
-  color: var(--selection-header);
+  color: var(--selection-footer);
 }
 footer {
   background-color: var(--background-footer);

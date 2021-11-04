@@ -1,6 +1,5 @@
 :root {
   --logo-studio: #000000;
-
   --text-primary: #212121;
   --text-secondary: #757575;
   --selection: #2196f3;
@@ -29,13 +28,12 @@ a {
   font-weight: normal;
   font-size: 36px;
   line-height: 1.2;
-
   text-align: center;
 }
+
 /* стилизация logo */
 .logo {
   font-family: Raleway, sans-serif;
-
   font-weight: bold;
   font-size: 26px;
   line-height: 1.2;
@@ -49,11 +47,11 @@ a {
 .logo-studio-footer {
   color: var(--background-primary);
 }
+
 /*Стилизация header links*/
 .nav-link {
   color: var(--text-primary);
   font-family: inherit;
-
   font-weight: 500;
   font-size: 14px;
   line-height: 1.15;
@@ -72,28 +70,25 @@ a {
 }
 .hero-title {
   color: var(--background-primary);
-
   font-weight: 900;
   font-size: 44px;
   line-height: 1.4;
   letter-spacing: 0.09em;
   text-transform: uppercase;
 }
+
 /* стилизация buttons */
 .primary-button {
   color: var(--background-primary);
   background-color: var(--selection);
-
   font-weight: bold;
   font-size: 16px;
   line-height: 1.9;
   letter-spacing: 0.06em;
 }
-
 .secondary-button {
   color: var(--text-primary);
   background-color: var(--background-section);
-
   font-weight: 500;
   font-size: 16px;
   line-height: 1.63;
@@ -105,6 +100,7 @@ a {
   background-color: var(--selection);
   cursor: pointer;
 }
+
 /*стилизация text images*/
 .team-list {
   background-color: var(--background-section);
@@ -112,33 +108,27 @@ a {
 }
 .team-member {
   color: var(--text-primary);
-
   font-weight: 500;
   font-size: 16px;
   line-height: 1.2;
-
   text-align: center;
 }
 .position-member {
   color: var(--text-secondary);
-
   font-size: 16px;
   line-height: 1.2;
-
   text-align: center;
 }
 .features-list {
 }
 .item-title {
   color: var(--text-primary);
-
   font-weight: bold;
   font-size: 14px;
   line-height: 1.15;
 }
 .item-discription {
   color: var(--text-secondary);
-
   font-size: 14px;
   line-height: 1.7;
 }
@@ -146,7 +136,6 @@ a {
 }
 .pitfolio-item-title {
   color: var(--text-primary);
-
   font-weight: bold;
   font-size: 18px;
   line-height: 2;
@@ -155,15 +144,14 @@ a {
 
 .portfolio-item-discription {
   color: var(--text-secondary);
-
   font-size: 16px;
   line-height: 1.9;
 }
+
 /*стилизация links */
 .header-link-contact {
   color: var(--text-secondary);
   font-family: inherit;
-
   font-weight: 500;
   font-size: 14px;
   line-height: 1.15;
@@ -172,7 +160,6 @@ a {
 .link-map,
 .footer-link-contact {
   font-family: inherit;
-
   font-weight: normal;
   font-size: 14px;
   line-height: 1.7;

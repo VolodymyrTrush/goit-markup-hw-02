@@ -1,12 +1,14 @@
+/*html {
+  box-sizing: border-box;
+}*/
+
 :root {
-  --logo-studio: #000000;
   --text-primary: #212121;
   --text-secondary: #757575;
   --selection: #2196f3;
   --background-primary: #ffffff;
   --background-secondary: #2f303a;
   --background-section: #f5f4fa;
-  --contact-footer: rgba(255, 255, 255, 0.6);
 }
 body {
   background-color: var(--background-primary);
@@ -25,7 +27,7 @@ a {
 }
 .main-title {
   color: var(--text-primary);
-  font-weight: bold;
+  font-weight: 700;
   font-size: 36px;
   line-height: 1.2;
   text-align: center;
@@ -34,18 +36,18 @@ a {
 /* стилизация logo */
 .logo {
   font-family: Raleway, sans-serif;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
 }
 .logo-web {
-  color: var(--selection);
+  color: #2196f3;
 }
 .logo-studio-header {
-  color: var(--logo-studio);
+  color: #000000;
 }
 .logo-studio-footer {
-  color: var(--background-primary);
+  color: #ffffff;
 }
 
 /*Стилизация header links*/
@@ -81,7 +83,8 @@ a {
 .primary-button {
   color: var(--background-primary);
   background-color: var(--selection);
-  font-weight: bold;
+  font-family: inherit;
+  font-weight: 700;
   font-size: 16px;
   line-height: 1.9;
   letter-spacing: 0.06em;
@@ -89,6 +92,7 @@ a {
 .secondary-button {
   color: var(--text-primary);
   background-color: var(--background-section);
+  font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.63;
@@ -123,7 +127,7 @@ a {
 }
 .item-title {
   color: var(--text-primary);
-  font-weight: bold;
+  font-weight: 700;
   font-size: 14px;
   line-height: 1.15;
 }
@@ -136,7 +140,7 @@ a {
 }
 .pitfolio-item-title {
   color: var(--text-primary);
-  font-weight: bold;
+  font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
@@ -152,24 +156,27 @@ a {
 .header-link-contact {
   color: var(--text-secondary);
   font-family: inherit;
+  font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.15;
   letter-spacing: 0.02em;
 }
+.link-map {
+  color: #ffffff;
+}
+.footer-link-contact {
+  color: rgba(255, 255, 255, 0.6);
+}
 .link-map,
 .footer-link-contact {
   font-family: inherit;
-  font-weight: normal;
+  font-style: normal;
+  font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
 }
-.link-map {
-  color: var(--background-primary);
-}
-.footer-link-contact {
-  color: var(--contact-footer);
-}
+
 .header-link-contact:hover,
 .header-link-contact:focus,
 .link-map:hover,

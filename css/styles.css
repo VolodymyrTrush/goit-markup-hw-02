@@ -25,7 +25,7 @@ a {
 }
 .main-title {
   color: var(--text-primary);
-  font-weight: normal;
+  font-weight: bold;
   font-size: 36px;
   line-height: 1.2;
   text-align: center;
